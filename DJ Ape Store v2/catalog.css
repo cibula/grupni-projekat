@@ -86,3 +86,28 @@ nav ul li a:hover {
   width: 20%;
   padding: 20px;
 }
+
+.row{
+  display: flex;
+}
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  position: flex;
+  float: left;
+  width: 95%;
+  border: 2px solid;
+  border-radius: 15px;
+}
+
+.row h1 {
+  font-size: 30px;
+  color: rgb(65, 199, 243);
+  text-shadow: black 2px 2px 2px;
+  text-align: center;
+}
