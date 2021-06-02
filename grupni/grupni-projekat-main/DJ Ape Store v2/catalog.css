@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  background-image: url(slike/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  cursor: pointer;
+  margin: 30px 0;
+}
+
+.menu-icon {
+  width: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 5px 20px;
+  border: 1px solid;
+  border-radius: 6px;
+}
+
+nav ul li a:hover {
+  background-color: black;
+  color: white;
+  transition: 300ms ease;
+}
+
+.heading {
+  position: relative;
+  font-size: 35px;
+  color: hotpink;
+  text-shadow: black 2px 2px 2px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.slike ul li {
+  list-style: none;
+  display: block;
+  margin-right: 30px;
+}
+
+.slike img {
+  float: left;
+  width: 20%;
+  padding: 20px;
+}
+
+.row{
+  display: flex;
+}
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  position: flex;
+  float: left;
+  width: 95%;
+  border: 2px solid;
+  border-radius: 15px;
+}
+
+.row h1 {
+  font-size: 30px;
+  color: rgb(65, 199, 243);
+  text-shadow: black 2px 2px 2px;
+  text-align: center;
+}

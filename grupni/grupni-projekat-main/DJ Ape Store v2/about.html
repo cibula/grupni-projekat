@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="about.css" />
+    <title>DJ Ape Store</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html"><img src="slike/logo.png" class="logo" /></a>
+        <nav>
+          <ul id="menuList">
+            <li>
+              <a href="catalog.html">Catalog</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <img src="slike/menu.png" class="menu-icon" onclick="togglemenu()" />
+      </div>
+
+      <div class="heading">
+        <h1>About</h1>
+      </div>
+
+      <div class="text">
+        <p>
+          DJ Ape Store is a non-profit organization with a goal to raise money
+          and awareness for Djape and his left toe nail through making and
+          selling merch with his name and face. We hope to make Djape and his
+          family happy and warn all children worldwide to properly cut their toe
+          nails.
+        </p>
+      </div>
+
+      <div class="djape">
+        <img src="slike/djape.png" />
+      </div>
+    </div>
+
+    <script>
+      var menuList = document.getElementById("menuList");
+
+      menuList.style.maxHeight = "0px";
+
+      function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "130px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

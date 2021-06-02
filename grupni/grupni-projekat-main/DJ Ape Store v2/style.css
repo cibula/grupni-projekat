@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  background-image: url(slike/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  cursor: pointer;
+  margin: 30px 0;
+}
+
+.menu-icon {
+  width: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 5px 20px;
+  border: 1px solid;
+  border-radius: 6px;
+}
+
+nav ul li a:hover {
+  background-color: black;
+  color: white;
+  transition: 300ms ease;
+}
+
+.ft_text h1 {
+  position: relative;
+  font-size: 90px;
+  color: hotpink;
+  text-shadow: black 2px 2px 2px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.col-1 {
+  position: relative;
+  margin-left: 35px;
+}
+
+.row h2 {
+  font-size: 30px;
+  color: rgb(65, 199, 243);
+  text-shadow: black 2px 2px 2px;
+  text-align: center;
+}
+
+.monke {
+  position: flex;
+  float: left;
+  width: 95%;
+  border: 2px solid;
+  border-radius: 15px;
+}
+
+.monke:hover {
+  opacity: 0.7;
+  transition: 450ms ease;
+}
+
+.col-2 {
+  position: relative;
+  display: block;
+}
+
+.whiteT {
+  position: flex;
+  float: right;
+  margin-right: 30px;
+  width: 94%;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+.whiteT:hover {
+  opacity: 0.7;
+  transition: 450ms ease;
+}
+
+@media only screen and (max-width: 700px) {
+  nav ul {
+    width: 100%;
+    background: linear-gradient(hotpink, rgb(65, 199, 243));
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+  }
+  nav ul li {
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    color: white;
+    border: none;
+    padding: 0;
+    font-size: 15px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #menuList {
+    overflow: hidden;
+    transition: 500ms;
+  }
+  .ft_text h1 {
+    position: relative;
+    font-size: 40px;
+    margin-top: 15px;
+  }
+  .row {
+    display: block;
+    align-items: center;
+    margin: 50px 0;
+  }
+  .col-1 {
+    margin-left: 5px;
+  }
+  .monke {
+    width: 250px;
+  }
+  .col-2 {
+    margin-left: 5px;
+  }
+  .whiteT {
+    float: left;
+    width: 250px;
+  }
+}
