@@ -75,15 +75,7 @@ nav ul li a:hover {
 }
 
 .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin: 100px 0;
-}
-
-.col-1 {
-  position: relative;
-  margin-left: 35px;
 }
 
 .row h2 {
@@ -104,11 +96,6 @@ nav ul li a:hover {
 .monke:hover {
   opacity: 0.7;
   transition: 450ms ease;
-}
-
-.col-2 {
-  position: relative;
-  display: block;
 }
 
 .whiteT {
@@ -154,25 +141,23 @@ nav ul li a:hover {
   }
   .ft_text h1 {
     position: relative;
-    font-size: 40px;
+    font-size: 60px;
     margin-top: 15px;
   }
   .row {
     display: block;
+    text-align: center;
     align-items: center;
-    margin: 50px 0;
-  }
-  .col-1 {
-    margin-left: 5px;
+    margin: 25px 0;
   }
   .monke {
-    width: 250px;
-  }
-  .col-2 {
-    margin-left: 5px;
+    margin-left: 0;
+    width: 273px;
+    float: left;
   }
   .whiteT {
+    width: 273px;
+    margin-right: 0;
     float: left;
-    width: 250px;
   }
 }
