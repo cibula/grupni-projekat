@@ -65,9 +65,9 @@ nav ul li a:hover {
   transition: 300ms ease;
 }
 
-.heading {
+.heading h1 {
   position: relative;
-  font-size: 50px;
+  font-size: 60px;
   color: hotpink;
   text-shadow: black 2px 2px 2px;
   text-align: center;
@@ -105,7 +105,8 @@ nav ul li a:hover {
 .address p {
   margin-top: 10px;
   margin-left: 5px;
-  font-size: 20px;
+  font-size: 25px;
+  padding: 3px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -135,8 +136,8 @@ nav ul li a:hover {
     overflow: hidden;
     transition: 500ms;
   }
-  .heading {
-    font-size: 30px;
+  .heading h1 {
+    font-size: 50px;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -145,7 +146,7 @@ nav ul li a:hover {
     width: 100%;
   }
   .address h2 {
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 5px;
   }
   .address ul li {
@@ -153,12 +154,12 @@ nav ul li a:hover {
     margin-left: 3px;
   }
   .address ul li a {
-    font-size: 17px;
+    font-size: 20px;
     padding: 3px;
   }
   .address p {
     margin-top: 5px;
     margin-left: 3px;
-    font-size: 17px;
+    font-size: 20px;
   }
 }

@@ -9,8 +9,8 @@
   min-height: 100vh;
   padding-left: 10%;
   padding-right: 10%;
-  box-sizing: border-box;
   overflow: hidden;
+  z-index: 1;
 }
 
 body {
@@ -84,19 +84,88 @@ img {
   border-radius: 15px;
 }
 
-.col-lg-6 img {
-  border: 2px solid black;
-}
-
-.col-xs-12 img {
-  border: 2px solid black;
-}
-
-.row h1 {
-  font-size: 30px;
+.col-lg-4 h2 {
+  font-size: 20px;
   color: rgb(65, 199, 243);
   text-shadow: black 2px 2px 2px;
+}
+
+.col-lg-4 {
   text-align: center;
+}
+
+.white {
+  border: 2px solid black;
+}
+
+.black {
+  border: 2px solid white;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 @media only screen and (max-width: 768px) {

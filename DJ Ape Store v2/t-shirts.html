@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-compatable" content="ie=edge" />
+    <script defer src="popup.js"></script>
+    <link rel="stylesheet" href="t-shirts.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>DJ Ape Store/T-Shirts</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html"><img src="slike/logo.png" class="logo" /></a>
+        <nav>
+          <ul id="menuList">
+            <li>
+              <a href="catalog.html">Catalog</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <img src="slike/menu.png" class="menu-icon" onclick="togglemenu()" />
+      </div>
+
+      <div class="heading">
+        <h1>T-shirts</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <button data-modal-target="#modal">
+            <img src="slike/find_monke2.png" class="white" />
+          </button>
+          <h2>Find ur monke black T</h2>
+          <button>
+            <img src="slike/djape_x_polovina_white2.png" class="black" />
+          </button>
+          <h2>Half Djape white T</h2>
+          <button>
+            <img src="slike/safary2.png" class="white" />
+          </button>
+          <h2>Djape safary camo T</h2>
+        </div>
+        <div class="col-lg-4">
+          <button>
+            <img src="slike/crna_majca2.png" class="white" />
+          </button>
+          <h2>Djape black T</h2>
+          <button>
+            <img src="slike/bela_majca2.png" class="black" />
+          </button>
+          <h2>Djape white T</h2>
+          <button>
+            <img src="slike/djape_x_polovina2.png" class="white" />
+          </button>
+          <h2>Half Djape black T</h2>
+        </div>
+        <div class="col-lg-4">
+          <button>
+            <img src="slike/polovina_cenzored2.png" class="white" />
+          </button>
+          <h2>Polovina cenzored black T</h2>
+          <button>
+            <img src="slike/djape_yang2.png" class="black" />
+          </button>
+          <h2>Djape Yang white T</h2>
+          <button>
+            <img src="slike/zivot_je_banana2.png" class="white" />
+          </button>
+          <h2>Life is a banana black T</h2>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Example modal</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit,
+        iusto cupiditate voluptate a perspiciatis alias provident esse,
+        aspernatur nam error! Provident culpa fuga totam atque, maiores tempore
+        praesentium saepe! Voluptatum ipsum est velit quis rerum atque debitis
+        esse, deleniti quasi ex cumque doloremque ullam soluta illo facere
+        dolor! Explicabo cumque similique quos amet harum minus facere id,
+        assumenda dolor necessitatibus voluptatibus eius ratione consectetur,
+        ipsa provident voluptatem a vero blanditiis incidunt reiciendis! Nemo
+        quidem excepturi illum natus cum molestiae.
+      </div>
+    </div>
+    <div id="overlay"></div>
+
+    <script>
+      var menuList = document.getElementById("menuList");
+
+      menuList.style.maxHeight = "0px";
+
+      function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "130px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
