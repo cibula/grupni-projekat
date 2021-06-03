@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-compatable" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="hoodies.css" />
+    <script defer src="popup.js"></script>
+    <title>DJ Ape Store/Hoodies</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html"><img src="slike/logo.png" class="logo" /></a>
+        <nav>
+          <ul id="menuList">
+            <li>
+              <a href="catalog.html">Catalog</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <img src="slike/menu.png" class="menu-icon" onclick="togglemenu()" />
+      </div>
+
+      <div class="heading">
+        <h1>Hoodies</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <button data-modal-target="#modal">
+            <img src="slike/demenz_hoodie2.png" class="white" />
+          </button>
+          <h2>Demenz black hoodie</h2>
+          <button data-modal-target="#modal">
+            <img src="slike/djape_yang_duks2.png" class="black" />
+          </button>
+          <h2>Djape yang white hoodie</h2>
+        </div>
+        <div class="col-lg-6">
+          <button data-modal-target="#modal">
+            <img src="slike/young_djape_2.png" class="black" />
+          </button>
+          <h2>Young Djape white hoodie</h2>
+          <button data-modal-target="#modal">
+            <img src="slike/demenz_colorbomb_2.png" class="white" />
+          </button>
+          <h2>Demenz colorbomb black hoodie</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Example modal</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe impedit,
+        iusto cupiditate voluptate a perspiciatis alias provident esse,
+        aspernatur nam error! Provident culpa fuga totam atque, maiores tempore
+        praesentium saepe! Voluptatum ipsum est velit quis rerum atque debitis
+        esse, deleniti quasi ex cumque doloremque ullam soluta illo facere
+        dolor! Explicabo cumque similique quos amet harum minus facere id,
+        assumenda dolor necessitatibus voluptatibus eius ratione consectetur,
+        ipsa provident voluptatem a vero blanditiis incidunt reiciendis! Nemo
+        quidem excepturi illum natus cum molestiae.
+      </div>
+    </div>
+    <div id="overlay"></div>
+
+    <script>
+      var menuList = document.getElementById("menuList");
+
+      menuList.style.maxHeight = "0px";
+
+      function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "130px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
