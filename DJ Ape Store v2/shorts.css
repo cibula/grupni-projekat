@@ -83,16 +83,6 @@ img {
   border-radius: 15px;
 }
 
-.col-lg-4 h2 {
-  font-size: 20px;
-  color: rgb(65, 199, 243);
-  text-shadow: black 2px 2px 2px;
-}
-
-.col-lg-4 {
-  text-align: center;
-}
-
 .white {
   border: 2px solid black;
 }
@@ -104,6 +94,16 @@ img {
 button {
   background-color: transparent;
   border: 0;
+}
+
+.col-lg-6 {
+  text-align: center;
+}
+
+.col-lg-6 h2 {
+  font-size: 20px;
+  color: rgb(65, 199, 243);
+  text-shadow: black 2px 2px 2px;
 }
 
 .modal {
